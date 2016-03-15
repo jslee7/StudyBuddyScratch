@@ -17,7 +17,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_weight="0.24"
 	    android:src="@drawable/add_button" 
-	    android:onClick="runAlarm"/>
+	    android:onClick="addAlarm"/>
 	    
     </LinearLayout>
 
