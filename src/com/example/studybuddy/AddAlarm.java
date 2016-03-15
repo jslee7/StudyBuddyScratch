@@ -1,26 +1,25 @@
 package com.example.studybuddy;
 
+import com.example.studybuddy.MainScreen.PlaceholderFragment;
+
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import java.lang.Object;
 
-public class AlarmMain extends Activity {
+public class AddAlarm extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_alarm_main);
+		setContentView(R.layout.activity_add_alarm);
 		
-		listAlarms();
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.alarm_main, menu);
+		getMenuInflater().inflate(R.menu.add_alarm, menu);
 		return true;
 	}
 
@@ -34,19 +33,5 @@ public class AlarmMain extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
-	
-	public void addAlarm()
-	{
-		
-		//Intent i = new Intent(this, AddAlarm.class);
-        //i.setAction(Intent.ACTION_MAIN);
-        //i.addCategory(Intent.CATEGORY_LAUNCHER);
-        //startActivity(i);
-	}
-	
-	public void listAlarms()
-	{
-		
 	}
 }
