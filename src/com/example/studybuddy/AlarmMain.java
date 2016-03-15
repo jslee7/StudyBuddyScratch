@@ -39,10 +39,10 @@ public class AlarmMain extends Activity {
 	public void addAlarm()
 	{
 		
-		//Intent i = new Intent(this, AddAlarm.class);
-        //i.setAction(Intent.ACTION_MAIN);
-        //i.addCategory(Intent.CATEGORY_LAUNCHER);
-        //startActivity(i);
+		Intent i = new Intent(this, AddAlarm.class);
+        i.setAction(Intent.ACTION_MAIN);
+        i.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(i);
 	}
 	
 	public void listAlarms()
