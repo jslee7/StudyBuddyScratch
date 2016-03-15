@@ -96,7 +96,13 @@ public class MainScreen extends Activity {
 
 	public void runAlarm(View v)
     {
-        Toast.makeText(this, "Clicked on alarm", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Clicked on alarm", Toast.LENGTH_LONG).show();
+		
+		Intent i = new Intent(this, AlarmMain.class);
+        i.setAction(Intent.ACTION_MAIN);
+        i.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(i);
+        
     } 
 
 	@Override
