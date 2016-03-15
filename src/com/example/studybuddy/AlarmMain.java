@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import java.lang.Object;
+import android.view.View;
+
 
 public class AlarmMain extends Activity {
 
@@ -36,7 +38,7 @@ public class AlarmMain extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void addAlarm()
+	public void addAlarm(View v)
 	{
 		
 		Intent i = new Intent(this, AddAlarm.class);
