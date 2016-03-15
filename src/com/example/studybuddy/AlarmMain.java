@@ -1,9 +1,11 @@
 package com.example.studybuddy;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import java.lang.Object;
 
 public class AlarmMain extends Activity {
 
@@ -11,6 +13,8 @@ public class AlarmMain extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_alarm_main);
+		
+		listAlarms();
 	}
 
 	@Override
@@ -30,5 +34,19 @@ public class AlarmMain extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void addAlarm()
+	{
+		
+		Intent i = new Intent(this, AddAlarm.class);
+        i.setAction(Intent.ACTION_MAIN);
+        i.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(i);
+	}
+	
+	public void listAlarms()
+	{
+		
 	}
 }

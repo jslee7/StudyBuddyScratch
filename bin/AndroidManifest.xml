@@ -30,6 +30,10 @@
             android:name=".AlarmMain"
             android:label="@string/title_activity_alarm_main" >
         </activity>
+        <activity
+            android:name=".AddAlarm"
+            android:label="@string/title_activity_add_alarm" >
+        </activity>
     </application>
 
 </manifest>

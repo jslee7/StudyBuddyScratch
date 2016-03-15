@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_flashcard_main">FlashcardMain</string>
     <string name="title_activity_alarm_main">AlarmMain</string>
+    <string name="title_activity_add_alarm">AddAlarm</string>
 
 </resources>
