@@ -49,6 +49,11 @@ public class AddAlarm extends Activity {
         Intent myIntent = new Intent(AddAlarm.this, AlarmReceiver.class);
         pendingIntent = PendingIntent.getBroadcast(AddAlarm.this, 0, myIntent, 0);
         alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+        
+        Intent i = new Intent(this, AlarmMain.class);
+        i.setAction(Intent.ACTION_MAIN);
+        i.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(i);
 	}
 
 	@Override
