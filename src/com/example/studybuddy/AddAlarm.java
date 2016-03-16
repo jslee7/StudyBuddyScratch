@@ -47,8 +47,10 @@ public class AddAlarm extends Activity {
         calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getHour());
         calendar.set(Calendar.MINUTE, alarmTimePicker.getMinute());
         Intent myIntent = new Intent(AddAlarm.this, AlarmReceiver.class);
-        pendingIntent = PendingIntent.getBroadcast(AddAlarm.this, 0, myIntent, 0);
-        alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+       // pendingIntent = PendingIntent.getBroadcast(AddAlarm.this, 0, myIntent, 0);
+        pendingIntent = PendingIntent.getActivity(AddAlarm.this, 0, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        
+        alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
         
         Intent i = new Intent(this, AlarmMain.class);
         i.setAction(Intent.ACTION_MAIN);

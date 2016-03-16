@@ -7,9 +7,12 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     
 
+    
+    
     <uses-sdk
         android:minSdkVersion="23"
         android:targetSdkVersion="23" />
+    
     
     
     <application
@@ -38,7 +41,8 @@
             android:name=".AddAlarm"
             android:label="@string/title_activity_add_alarm" >
         </activity>
-        <receiver android:name=".AlarmReciever"/> 
+        <receiver android:name=".AlarmReciever" android:process=":remote" android:enabled="true"></receiver>
+        
     </application>
 
 </manifest>
