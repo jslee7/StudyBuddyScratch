@@ -37,7 +37,27 @@
             android:name=".AlarmMain"
             android:label="@string/title_activity_alarm_main" >
         </activity>
-        <activity
+        
+        
+        <!-- FLASHCARD TEST -->
+<!--    <activity
+            android:name=".ui.activity.MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- FLASHCARD TEST -->
+        
+	<activity android:name=".CardRunner"/>
+	<activity android:name=".MemoryRunner"/>
+	<activity android:name=".LessonSelect"/>
+	<activity android:name=".DownloadableLessonList"/>
+	<activity android:name=".LessonDownload"/>
+    <activity
             android:name=".AddAlarm"
             android:label="@string/title_activity_add_alarm" >
         </activity>

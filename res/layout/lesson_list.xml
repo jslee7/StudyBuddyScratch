@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright 2010 Nick Lanham
+*
+* This file is part of "AndroidFlashcards".
+*
+* "AndroidFlashcards" is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* "AndroidFlashcards" is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with "AndroidFlashcards". If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+  <ImageView
+     android:id="@+id/list_icon"
+     android:layout_width="56px"
+     android:layout_height="56px"
+		 android:layout_marginTop="4px"
+     android:paddingRight="10px"
+		 android:gravity="center"
+     android:src="@drawable/list_icon"/>
+	<LinearLayout 
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical">
+		<TextView
+			 android:id="@+id/list_label"
+			 android:textSize="20sp"
+			 android:textStyle="bold"
+			 android:singleLine="true"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"/>
+		<TextView
+			 android:id="@+id/list_desc"
+			 android:singleLine="true"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"/>
+		<TextView
+			 android:id="@+id/list_count"
+			 android:singleLine="true"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>
