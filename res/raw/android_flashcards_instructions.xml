@@ -1,0 +1,64 @@
+<!--
+* Copyright 2010 Nick Lanham
+*
+* This file is part of "AndroidFlashcards".
+*
+* "AndroidFlashcards" is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* "AndroidFlashcards" is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with "AndroidFlashcards". If not, see <http://www.gnu.org/licenses/>.
+-->
+<lesson>
+  <name>Instructions</name>
+  <description>How to use Android Flashcards.  Select "Review all cards" below to read the instructions.</description>
+	<card>
+		<frontside>
+			Welcome to Android Flashcards, an application to help you learn.
+
+Touch the screen to flip over the card (try it now).
+		</frontside>
+		<backside>
+			Great!  Now you're looking at the back of the card, which will typically be the answer to whatever the front of the card was asking. 
+
+You can also read all about Android Flashcards at our website: 
+http://secretsockssoftware.com/androidflashcards
+
+To go to the next card, just slide the card over from right to left (try it now).
+		</backside>
+	</card>
+	<card>
+		<frontside>
+			Awesome!  You're now looking at the second card in the deck.  You can go back to the previous card by sliding from left to right.
+
+Android flashcards doesn't come with any default lessons, but you can easily install lessons from our library.  To do this,	just hit the "Menu" button from the main lesson select screen	and choose "Download new lessons".
+
+You can also hit the "Menu" button while reviewing cards to jump to a specific card or reverse the front and back of the cards in the deck.
+
+Now you can either hit the back button a couple of times to go back to the main lesson select screen and download some lessons,	or touch this card to flip it and learn about the Adaptive Memory Game component of Android Flashcards.
+		</frontside>
+		<backside>
+			Android Flashcards isn't just a flashcard review application. It helps you learn by frequently showing you things you didn't know, and waiting longer to show you things the more you get	them right.
+
+To use this component of Android Flashcards, simply select "Adaptive Memory Game" from the lesson screen.  In this mode, you don't slide the cards left and right, you just tap the card to flip it, and tell the application if you were right or wrong about whatever the card was asking.  If you say you were right, Android Flashcards will wait a bit (but not too long) before asking you again, otherwise the card will be shown again quite soon.  Each time you get a card right it will take even longer to show up again.  The game ends when you've answered every card right five times in a row.
+
+There's one more card about creating your own lessons.  You can slide this card over to get to it.
+		</backside>
+	</card>
+	<card>
+		<frontside>
+			It's easy to create your own flashcards for Android Flashcards.  You can visit http://secretsockssoftware.com/androidflashcards to find out how to do this.
+		</frontside>
+		<backside>
+			This is the end of the instructions.  You should now hit back a couple of times and download some lessons to get started!
+		</backside>
+	</card>
+</lesson>
+			

@@ -153,9 +153,9 @@ public class FlashcardMain extends ListActivity implements Runnable {
 	@Override
   public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-//		menu.add(0, GET_LESSONS_ID, 0, R.string.get_lessons);
-//		menu.add(0, RESCAN_ID, 1, R.string.rescan);
-//		menu.add(0, FEED_BACK_ID, 1, R.string.feedback);
+		menu.add(0, GET_LESSONS_ID, 0, R.string.get_lessons);
+		menu.add(0, RESCAN_ID, 1, R.string.rescan);
+		menu.add(0, FEED_BACK_ID, 1, R.string.feedback);
 		return true;
 	}
 
@@ -184,7 +184,7 @@ public class FlashcardMain extends ListActivity implements Runnable {
 	public void onCreateContextMenu(ContextMenu menu, View v,
 																	ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
-//		menu.add(0, DELETE_ID, 0, R.string.menu_delete);
+		menu.add(0, DELETE_ID, 0, R.string.menu_delete);
 	}
 	
 	static private boolean deleteDir(File dir) {
@@ -264,8 +264,8 @@ public class FlashcardMain extends ListActivity implements Runnable {
 				switch (msg.what) {
 				case 0: {
 					pd.dismiss();
-				//	LessonAdapter ad = new LessonAdapter(lessons);
-				//	setListAdapter(ad);
+					LessonAdapter ad = new LessonAdapter(lessons);
+					setListAdapter(ad);
 					getListView().setTextFilterEnabled(true);
 					break;
 				}
@@ -489,13 +489,13 @@ public class FlashcardMain extends ListActivity implements Runnable {
 		File f = new File(sdDir+File.separator+"flashcards/android_flashcards_instructions.xml");
 		if (!f.exists()) {
 			try {
-	/*			BufferedInputStream bis = new BufferedInputStream(getResources().openRawResource(R.raw.android_flashcards_instructions));
+				BufferedInputStream bis = new BufferedInputStream(getResources().openRawResource(R.raw.android_flashcards_instructions));
 				BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(f));
 				int i;
 				while ((i = bis.read()) != -1)
 					bos.write(i);
 				bos.close();
-				bis.close();*/
+				bis.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -503,33 +503,33 @@ public class FlashcardMain extends ListActivity implements Runnable {
 	}
 
 	// ListAdapter
-/*	class LessonAdapter extends ArrayAdapter<LessonListItem> {
+	class LessonAdapter extends ArrayAdapter<LessonListItem> {
 		LessonListItem[] items;
-		/*LessonAdapter(LessonListItem[] _items) {
+		LessonAdapter(LessonListItem[] _items) {
 			super(FlashcardMain.this, R.layout.lesson_list, _items);
 			items = _items;
-		}*/
-		
-//		public View getView(int position, View convertView,	ViewGroup parent) {
-	//		View row=convertView;
-		//	if (row==null) {
-			//	LayoutInflater inflater=getLayoutInflater();
-//				row=inflater.inflate(R.layout.lesson_list, parent, false);
-	//			row.setTag(R.id.list_label, row.findViewById(R.id.list_label));
-		//		row.setTag(R.id.list_desc, row.findViewById(R.id.list_desc));
-			//	row.setTag(R.id.list_count, row.findViewById(R.id.list_count));
-				//row.setTag(R.id.list_icon, row.findViewById(R.id.list_icon));
-			//}
-	//		((TextView)row.getTag(R.id.list_label)).setText(items[position].name);
-		//	((TextView)row.getTag(R.id.list_desc)).setText(items[position].desc);
-			//((TextView)row.getTag(R.id.list_count)).setText(items[position].count);
-			//ImageView icon=(ImageView)row.getTag(R.id.list_icon);
-	//		if (items[position].isDir)
-		//		icon.setImageResource(R.drawable.folder);
-		//	else
-			//	icon.setImageResource(R.drawable.list_icon);
-			//return(row);
 		}
-//	}
+		
+		public View getView(int position, View convertView,	ViewGroup parent) {
+			View row=convertView;
+			if (row==null) {
+				LayoutInflater inflater=getLayoutInflater();
+				row=inflater.inflate(R.layout.lesson_list, parent, false);
+				row.setTag(R.id.list_label, row.findViewById(R.id.list_label));
+				row.setTag(R.id.list_desc, row.findViewById(R.id.list_desc));
+				row.setTag(R.id.list_count, row.findViewById(R.id.list_count));
+				row.setTag(R.id.list_icon, row.findViewById(R.id.list_icon));
+			}
+			((TextView)row.getTag(R.id.list_label)).setText(items[position].name);
+			((TextView)row.getTag(R.id.list_desc)).setText(items[position].desc);
+			((TextView)row.getTag(R.id.list_count)).setText(items[position].count);
+			ImageView icon=(ImageView)row.getTag(R.id.list_icon);
+			if (items[position].isDir)
+				icon.setImageResource(R.drawable.folder);
+			else
+				icon.setImageResource(R.drawable.list_icon);
+			return(row);
+		}
+	}
 
-//}
+}

@@ -7,5 +7,18 @@
     <string name="title_activity_flashcard_main">FlashcardMain</string>
     <string name="title_activity_alarm_main">AlarmMain</string>
     <string name="title_activity_add_alarm">AddAlarm</string>
+    <string name="cardtext">Card Text</string>
+	<string name="first_card">First Card</string>
+	<string name="goto_card">Go To Card</string>
+	<string name="last_card">Last Card</string>
+	<string name="switch_fb">Switch Front/Back</string>
+	<string name="search_cards">Search Cards</string>
+	<string name="search_next">Next Search Result</string>
+	<string name="clear_stat">Restart Game (Clear Status)</string>
+	<string name="feedback">Feedback</string>
+	<string name="get_lessons">Download New Lessons</string>
+	<string name="reload">Reload Lesson List</string>
+	<string name="menu_delete">Delete</string>
+	<string name="rescan">Rescan Current Directory</string>
 
 </resources>

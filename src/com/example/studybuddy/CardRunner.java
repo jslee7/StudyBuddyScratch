@@ -329,11 +329,11 @@ public class CardRunner extends Activity implements OnGestureListener {
 	@Override
   public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-//		menu.add(0, SEARCH_CARDS_ID, 0, R.string.search_cards);
-//		menu.add(0, FIRST_CARD_ID, 2, R.string.first_card);
-//		menu.add(0, GOTO_CARD_ID, 3, R.string.goto_card);
-//		menu.add(0, LAST_CARD_ID, 4, R.string.last_card);
-//		menu.add(0, SWITCH_FB_ID, 5, R.string.switch_fb);
+		menu.add(0, SEARCH_CARDS_ID, 0, R.string.search_cards);
+		menu.add(0, FIRST_CARD_ID, 2, R.string.first_card);
+		menu.add(0, GOTO_CARD_ID, 3, R.string.goto_card);
+		menu.add(0, LAST_CARD_ID, 4, R.string.last_card);
+		menu.add(0, SWITCH_FB_ID, 5, R.string.switch_fb);
 		myMenu = menu;
 		return true;
 	}

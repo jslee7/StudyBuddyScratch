@@ -508,8 +508,8 @@ public class MemoryRunner extends Activity {
 	@Override
   public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-	//	menu.add(0, SWITCH_FB_ID, 3, R.string.switch_fb);
-	//	menu.add(0, CLEAR_STATUS_ID, 3, R.string.clear_stat);
+		menu.add(0, SWITCH_FB_ID, 3, R.string.switch_fb);
+		menu.add(0, CLEAR_STATUS_ID, 3, R.string.clear_stat);
 		return true;
 	}
 
