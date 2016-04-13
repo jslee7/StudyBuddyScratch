@@ -153,7 +153,7 @@ public class FlashcardMain extends ListActivity implements Runnable {
 	@Override
   public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		menu.add(0, GET_LESSONS_ID, 0, R.string.get_lessons);
+//		menu.add(0, GET_LESSONS_ID, 0, R.string.get_lessons);
 //		menu.add(0, RESCAN_ID, 1, R.string.rescan);
 //		menu.add(0, FEED_BACK_ID, 1, R.string.feedback);
 		return true;
